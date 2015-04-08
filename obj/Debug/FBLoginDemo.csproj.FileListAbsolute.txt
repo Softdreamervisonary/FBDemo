@@ -61,3 +61,5 @@ d:\users\administrator\documents\visual studio 2012\Projects\FBLoginDemo\FBLogin
 d:\users\administrator\documents\visual studio 2012\Projects\FBLoginDemo\FBLoginDemo\obj\Debug\FBLoginDemo.csprojResolveAssemblyReference.cache
 d:\users\administrator\documents\visual studio 2012\Projects\FBLoginDemo\FBLoginDemo\obj\Debug\FBLoginDemo.dll
 d:\users\administrator\documents\visual studio 2012\Projects\FBLoginDemo\FBLoginDemo\obj\Debug\FBLoginDemo.pdb
+D:\Users\Administrator\Documents\Visual Studio 2012\Projects\FBLoginDemo\FBLoginDemo\bin\Facebook.dll
+D:\Users\Administrator\Documents\Visual Studio 2012\Projects\FBLoginDemo\FBLoginDemo\bin\Facebook.xml

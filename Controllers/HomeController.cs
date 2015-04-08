@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Facebook;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,9 +11,23 @@ namespace FBLoginDemo.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "修改此範本即可開始著手進行您的 ASP.NET MVC 應用程式。";
-
+            
             return View();
+        }
+
+        public ActionResult GetUsers(string accessToken)
+        {
+            //擺token
+            var client = new FacebookClient(accessToken);
+            //取得json格式的資訊和需要的fields
+            dynamic result = client.Get("me", new { fields = "name,id" });
+            string name = result.name;
+            string id = result.id;
+
+            ViewBag.name = name;
+            ViewBag.id = id;
+
+            return View("Index");
         }
 
         public ActionResult About()
@@ -24,9 +39,10 @@ namespace FBLoginDemo.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "您的連絡頁面。";
 
+        
             return View();
         }
+
     }
 }
